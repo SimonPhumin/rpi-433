@@ -1,3 +1,7 @@
+CXXFLAGS += -Wall
+CXXFLAGS += -Wall -fpermissive
+CXXFLAGS += -lwiringPi
+
 all: codesend RFSniffer
 	
 codesend: RCSwitch.o codesend.o
